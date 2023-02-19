@@ -90,12 +90,25 @@ button:disabled {
 
 footer {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  line-height: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 footer a {
   text-decoration: none;
   color: #fff;
+  min-width: 200px;
+  white-space: nowrap;
   background-color: rgba(255, 255, 255, 0.2);
-  padding: 7px 18px;
+  padding: 7px 12px;
   border-radius: 3px;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
