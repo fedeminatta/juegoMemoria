@@ -1,21 +1,33 @@
 @media screen and (max-width: 750px)
-main
-    flex-direction: column
-    justify-content: flex-start
-    width: 730px
-    max-width: 95%
+    main
+        flex-direction: column
+        justify-content: flex-start
+        width: 730px
+        max-width: 100%
 
-.section1
-    border-bottom-right-radius: 0
-    border-bottom-left-radius: 0
+    .section1
+        border-bottom-right-radius: 0
+        border-bottom-left-radius: 0
 
-.section2
-    display: flex
-    width: 90%
-    height: auto
-    border-radius: 8px
-    flex-wrap: wrap row
+    .section2
+        display: flex
+        flex-direction: row
+        width: 95%
+        height: auto
+        border-radius: 0 0 8px 8px
+        flex-wrap: wrap
 
-.estadisticas
-    min-width: 200px
-    flex-grow: 1
+    .estadisticas
+        width: 200px
+        flex-grow: 1
+
+@media screen and (max-width: 530px)
+    button
+        width: 80px
+        height: 80px
+    .section1
+        width: 97%
+    .section2
+        border-top-right-radius: 0px
+        border-top-left-radius: 0px
+        width: 97%

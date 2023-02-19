@@ -1,11 +1,12 @@
 *
-	overflow: hidden
+	box-sizing: border-box
 
 body
 	background: rgb(5,206,255)
 	background: linear-gradient(90deg, rgba(5,206,255,1) 0%, rgba(45,101,253,1) 100%)
 	font-family: sans-serif
 	color: #fff
+	overflow-x: hidden
 
 main
 	width: 730px
@@ -18,9 +19,16 @@ main
 	background-color: rgba(255,255 ,255 , 0.2)
 	padding: 0 10px 10px 10px
 	border-radius: 8px
+	display: flex
+	flex-flow: wrap row
+	width: 95%
+	gap: 10px
+	justify-content: center
+	align-items: center
 
 h1
 	text-align: center
+	flex-basis: 100%
 
 button
 	height: 100px

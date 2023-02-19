@@ -1,9 +1,15 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   background: rgb(5, 206, 255);
   background: -webkit-gradient(linear, left top, right top, from(rgb(5, 206, 255)), to(rgb(45, 101, 253)));
   background: linear-gradient(90deg, rgb(5, 206, 255) 0%, rgb(45, 101, 253) 100%);
   font-family: sans-serif;
   color: #fff;
+  overflow-x: hidden;
 }
 
 main {
@@ -25,10 +31,27 @@ main {
   background-color: rgba(255, 255, 255, 0.2);
   padding: 0 10px 10px 10px;
   border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  width: 95%;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h1 {
   text-align: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 button {
@@ -83,4 +106,56 @@ footer a:hover {
 
 img {
   width: 80%;
+}
+
+@media screen and (max-width: 750px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 730px;
+    max-width: 100%;
+  }
+  .section1 {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .section2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 95%;
+    height: auto;
+    border-radius: 0 0 8px 8px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .estadisticas {
+    width: 200px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+@media screen and (max-width: 530px) {
+  button {
+    width: 80px;
+    height: 80px;
+  }
+  .section1 {
+    width: 97%;
+  }
+  .section2 {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    width: 97%;
+  }
 }/*# sourceMappingURL=estilos.css.map */
