@@ -65,12 +65,12 @@ button {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 button:hover {
   cursor: pointer;
 }
 button:disabled {
-  background-color: rgba(255, 255, 255, 0.2);
   -webkit-transform: rotateY(360deg);
           transform: rotateY(360deg);
 }

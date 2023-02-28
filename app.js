@@ -28,8 +28,9 @@ numeros = numeros.sort(() => {
 	return Math.random() - 0.5;
 });
 
-inicio();
-function inicio() {
+// Rotar las tarjetas
+rotacion();
+function rotacion() {
 	for (let i = 0; i <= 15; i++) {
 		let tarjetaBloqueada = document.getElementById(i);
 		tarjetaBloqueada.disabled = true;
