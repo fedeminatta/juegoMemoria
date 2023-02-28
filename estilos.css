@@ -14,7 +14,7 @@ body {
 
 main {
   width: 730px;
-  margin: 70px auto 30px;
+  margin: 70px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,11 +112,16 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4745098039);
+  bottom: 0;
+  left: 0;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: wrap row;
           flex-flow: wrap row;
   line-height: 35px;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -178,6 +183,9 @@ img {
   }
 }
 @media screen and (max-width: 530px) {
+  main {
+    margin-top: 20px;
+  }
   button {
     width: 80px;
     height: 80px;
@@ -214,5 +222,14 @@ img {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+  }
+}
+@media screen and (max-height: 650px) {
+  main {
+    margin-top: 20px;
+  }
+  button {
+    width: 70px;
+    height: 70px;
   }
 }/*# sourceMappingURL=estilos.css.map */
