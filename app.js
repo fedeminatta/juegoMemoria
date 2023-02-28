@@ -28,6 +28,22 @@ numeros = numeros.sort(() => {
 	return Math.random() - 0.5;
 });
 
+inicio();
+function inicio() {
+	for (let i = 0; i <= 15; i++) {
+		let tarjetaBloqueada = document.getElementById(i);
+		tarjetaBloqueada.disabled = true;
+		tarjetaBloqueada.innerHTML = `<img src='./img/${numeros[i]}.png'></img>`;
+	}
+	setTimeout(() => {
+		for (let i = 0; i <= 15; i++) {
+			let tarj = document.getElementById(i);
+			tarj.disabled = false;
+			tarj.innerHTML = '';
+		}
+	}, 800);
+}
+
 // Funciones
 function contarTiempo() {
 	tiempoRegresivoId = setInterval(() => {
@@ -45,6 +61,7 @@ function bloquearTarjetas() {
 	for (let i = 0; i <= 15; i++) {
 		let tarjetaBloqueada = document.getElementById(i);
 		tarjetaBloqueada.innerHTML = `<img src='./img/${numeros[i]}.png'></img>`;
+
 		tarjetaBloqueada.disabled = true;
 	}
 }
